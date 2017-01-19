@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import Navbar from '../components/Navbar';
+import Nav from '../components/ui/Nav';
 
 export default class App extends Component {
 
@@ -9,8 +9,8 @@ export default class App extends Component {
     
     return (
       <div>
-        <Navbar />
-        <div className="mainContainer container">
+        <Nav />
+        <div className='ui main container'>
           {children}
         </div>
       </div>
