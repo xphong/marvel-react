@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import { Radar as RadarChart } from 'react-chartjs-2';
+import { Radar as RadarChart, defaults as ChartDefaults } from 'react-chartjs-2';
 
 export default class CharacterPowerLevelRadarChart extends Component {
   constructor(props){
@@ -10,8 +10,12 @@ export default class CharacterPowerLevelRadarChart extends Component {
   render() {
     const {characterChartData} = this.props;
 
+    ChartDefaults.global.legend.display = false;
+
     return (
-      <RadarChart className='chart' data={characterChartData} width='350' height='350'/>
+      <RadarChart 
+          data={characterChartData}
+      />
     );
   }
 }

@@ -58,8 +58,9 @@ export default class CharacterPowerLevelInfo extends Component {
       <div className='ui container center aligned'>
         <CharacterPowerLevelInfoDisplay character={character} />
         <div className='chart-area'>
-          <CharacterPowerLevelRadarChart characterChartData={characterChartData} />
-          <CharacterPowerLevelBarChart characterChartData={characterChartData} />
+          <div className='chart'>
+              <CharacterPowerLevelBarChart characterChartData={characterChartData} />
+          </div>
         </div>
       </div>
     );
