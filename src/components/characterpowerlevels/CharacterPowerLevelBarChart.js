@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import { Bar as BarChart } from 'react-chartjs';
+import { Bar as BarChart } from 'react-chartjs-2';
 
 export default class CharacterPowerLevelBarChart extends Component {
   constructor(props){

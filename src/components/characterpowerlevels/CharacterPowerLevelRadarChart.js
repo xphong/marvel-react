@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 
-import { Radar as RadarChart } from 'react-chartjs';
+import { Radar as RadarChart } from 'react-chartjs-2';
 
 export default class CharacterPowerLevelRadarChart extends Component {
   constructor(props){
