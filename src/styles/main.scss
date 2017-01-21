@@ -42,6 +42,10 @@ body {
   }
 }
 
+.ui.card, .ui.cards > .card {
+  width: 364px;
+}
+
 .powerlevel-image {
   width: 300px;
   height: auto;
