@@ -13,7 +13,7 @@ export default function powerlevelsReducer(state = INITIAL_STATE, action = null)
       return Object.assign({}, state, {isLoading: false, data: action.payload.data, error: true});
     case types.RECEIVE_POWERLEVELS:
       return Object.assign({}, state, {isLoading: false, data: action.payload.data, error: false, isFetched: true });
-    case types.RECEIVE_POWERLEVELS_ERROR:
+    case types.REQUEST_POWERLEVELS:
       return Object.assign({}, state, {isLoading: true, error: false });
     default:
       return state;
